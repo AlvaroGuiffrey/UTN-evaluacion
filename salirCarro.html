@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,inicial-scale=1">
+<meta name="author" content="Alvaro Guiffrey">
+<meta name="description" content="Página para la salida del sitio. Se muestra el mensaje
+de saludo.">
+<meta name="curso" content="Desarrollo Web con Javascript - Trabajo Final Integrador">
+<meta name="fecha" content="20/02/2020">
+<title>Curso JS - Evaluación Integradora</title>
+<!-- Link de la aplicación -->
+<link href="css/style_curso.css" rel="stylesheet" type="text/css" />
+<!-- Script de la aplicación -->
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/salirCarro.js" type="text/javascript"></script>
+<!-- Librerias -->
+<script src="https://kit.fontawesome.com/d0d0eb778c.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="lib/jquery/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- Cabecera de la página -->
+	<header>
+		<h1 id="logo">
+			<img id="imgLogo"/><span id="titulo"></span>
+			<div class="tooltip-i" id='logoInfo'>
+	  		<i id="info"></i><span class="tooltiptext-i" id="textoInfo"></span>
+	  	</div>
+		</h1>
+	</header>
+
+<!-- Contenido de la página -->
+<section class="caja" id="contenido">
+  <h3> Salió del Carro de Compras </h3>
+  <article class="mensaje" id="mensaje"></article>
+	<div class="acciones">
+
+	</div>
+</section>
+
+<footer>
+  <div id="pie">Alumno: <a id="mailAlumno"></a> @ Curso: 2019-2020</div>
+  <div id="botones_pie"><a id="inicioPie"><i id="iconoInicioPie"></i></a></div>
+</footer>
+</body>
+</html>

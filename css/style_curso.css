@@ -1,0 +1,464 @@
+@charset "UTF-8";
+
+/* Archivo CSS con todos los estilos utilizados en el sitio de compras.
+	Autor: Alvaro Guiffrey
+	Curso: Desarrollo Web con Javascript - Trabajo Final Integrador
+  Fecha: 20/02/2020
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(192,192,192,0.1);
+	font-family: Arial, Verdana, sans-serif;
+}
+
+header, footer, #contenido {
+	margin: auto;
+	width: 90%;
+}
+
+header h1, footer div#pie {
+	background-color: rgba(192,192,192,0.3);
+	box-shadow: 10px 10px 5px grey;
+	padding: 0.2em;
+}
+
+header h1#logo img {
+	height: 50px;
+	margin-left: 0.5em;
+
+}
+
+h3, h4 {
+	text-align: center;
+}
+
+/* Logo información */
+div#logoInfo {
+	float: right;
+}
+i#info {
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin: 0.5em;
+	color: grey;
+}
+span#titulo {
+	margin-left: 1em;
+	margin-right: 0.5em;
+	text-align: center;
+	color: rgba(192,192,192,0.8);
+	font-size: 2.5vw;
+}
+
+/* Usuario activo */
+#usuarioActivo {
+	float: right;
+	font-size: 10px;
+	padding: 2px;
+	text-align: right;
+	margin-right: 0.7em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey;
+	border-radius: 10px;
+	color: grey;
+	display: none;
+}
+
+/* Mensajes */
+.mensaje {
+	font-size: 14px;
+	padding: 10px;
+	margin-left: 0.7em;
+	margin-right: 0.7em;
+	border-left-style: solid;
+	border-left-width: 5px;
+	border-color: blue;
+	background-color: #AED6F1;
+	display: none;
+}
+.mensajeAlerta {
+	font-size: 14px;
+	padding: 10px;
+	margin-left: 0.7em;
+	margin-right: 0.7em;
+	border-left-style: solid;
+	border-left-width: 5px;
+	border-color: red;
+	background-color: #FFA07A;
+}
+.mensajeInfo {
+	font-size: 14px;
+	padding: 10px;
+	margin-left: 0.7em;
+	margin-right: 0.7em;
+	border-left-style: solid;
+	border-left-width: 5px;
+	border-color: yellow;
+	background-color: #F9E79F;
+}
+.mensajeSuceso {
+	font-size: 14px;
+	padding: 10px;
+	margin-left: 0.7em;
+	margin-right: 0.7em;
+	border-left-style: solid;
+	border-left-width: 5px;
+	border-color: green;
+	background-color: #D5F5E3;
+}
+
+/* Formulario de Login */
+.login {
+	width:500px;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 10px;
+	padding: 20px;
+	background-color: #D5DBDB;
+}
+.col-30 {
+	float: left;
+	width: 30%;
+	margin-top: 5px;
+}
+.col-70 {
+	float: left;
+	width: 70%;
+	margin-top: 5px;
+}
+.renglon {
+	width: 90%;
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Enlaces */
+.enlace {
+	font-size: 12px;
+	float: right;
+}
+
+/* Botones */
+.boton {
+	background-color: #1B4F72;
+	color: white;
+	margin-right: 5px;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	float: left;
+}
+.boton:hover {
+	background-color: #2874A6;
+}
+.botonSuceso {
+	background-color: #196F3D;
+	color: white;
+	margin-right: 5px;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	float: left;
+}
+.botonSuceso:hover {
+	background-color: #1D8348;
+}
+.botonGris {
+	background-color: #B3B6B7;
+	color: white;
+	margin-right: 5px;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	float: left;
+}
+.botonGris:hover {
+	background-color: #979A9A;
+}
+
+/* Caja que contiene el menú, la lista de productos, el ticket y las acciones */
+.caja .acciones {
+	overflow: auto;
+	width: 90%;
+	margin-left: 0.5em;
+	padding: 5px;
+}
+.tituloCaja {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0.5em;
+	border-bottom: solid 0.5px;
+	border-color: grey;
+	display: block;
+	text-align: left;
+	font-size: 14px;
+	color: grey;
+}
+
+/* Menu del Carro de Compras */
+.menu {
+	float: left;
+	width: 15%;
+	padding: 0.5em;
+	text-align: left;
+}
+.tituloMenu {
+	background-color: #21618C;
+}
+.tituloMenu:hover {
+	background-color: #2874A6;
+}
+.categoria {
+	background-color: #3498DB;
+}
+.categoria:hover {
+	background-color: #5DADE2;
+}
+.subCategoria {
+	background-color: #85C1E9;
+}
+.subCategoria:hover {
+	background-color: #AED6F1;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+li a {
+	display: block;
+	padding: 10px;
+	text-align: left;
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+}
+li a i {
+	float: right;
+}
+
+/* Productos del Carro de Compras */
+.productos {
+	float: left;
+	width: 65%;
+	padding: 0.5em;
+	text-align: left;
+}
+
+/* Producto (foto y datos) */
+div.producto {
+	border: 1px solid #E5E7E9;
+	margin-top: 5px;
+}
+div.producto:hover {
+	border-color: #A6ACAF;
+}
+div.producto img {
+	width: 100%;
+	height: auto;
+}
+div.detalle {
+	padding: 10px;
+	text-align: left;
+	background-color: #D5DBDB;
+}
+p.nombre {
+	margin: 0;
+	font-size: 12px;
+}
+p.presentacion {
+	margin: 0;
+	font-size: 10px;
+}
+p.codigo {
+	margin: 0;
+	font-size: 10px;
+}
+p.precio {
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-size: 18px;
+	text-align: center;
+}
+.responsive {
+	padding: 0 5px;
+	float: left;
+	width: 32.99999%;
+}
+/* Botón del producto de la lista de productos */
+.grupoBotones  {
+	float: right;
+	width: 110px;
+	margin: 0;
+	padding: 0;
+}
+.botonP {
+	border-radius: 10px;
+	border: 0;
+	background-color: #58D68D;
+	text-align: center;
+	text-decoration: none;
+}
+.contador {
+	width: 40px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+	background-color: #F2F3F4;
+}
+button.botonP {
+	width: 50px;
+	color: #145A32;
+	cursor: pointer;
+}
+button.botonP:hover {
+	color: red;
+}
+
+/* Ticket del Carro de Compras */
+.ticket {
+	float: left;
+	width: 20%;
+	padding: 0.5em;
+	text-align: left;
+}
+.linea {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border-bottom: solid 0.5px;
+	border-color: grey;
+	display: block;
+	text-align: left;
+	font-size: 11px;
+	color: grey;
+}
+div#lineas p {
+	margin: 0;
+	padding: 0;
+}
+div#totales {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 5px;
+	background-color: #D6DBDF;
+	border-bottom: solid 0.5px;
+	border-color: grey;
+	display: block;
+	text-align: left;
+	font-size: 11px;
+	color: blue;
+	display: none;
+}
+div#totales p {
+	margin: 0;
+	margin-bottom: : 5px;
+	padding: 0;
+}
+
+/* Ticket del Comprobante de la compra */
+.cajaComp {
+	width: 450px;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	width: 90%;
+	margin: 0;
+	padding: 10px;
+}
+
+/* Posiciones */
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+
+/* Responsive */
+@media only screen and (max-width:1000px) {
+	/* Para móbiles: */
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width:800px) {
+	/* Para móbiles: */
+	.menu, .productos, .ticket, .login {
+		width: 100%;
+	}
+	.responsive {
+		width: 100%;
+	}
+}
+
+.p_center {
+	text-align: center;
+}
+
+.div_center {
+	text-align: center;
+}
+
+/* Pie de la página */
+#pie {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	text-align: center;
+	color: rgba(192,192,192,0.9);
+	font-size: 14px;
+	font-style: italic;
+}
+
+#botones_pie {
+	padding: 20px;
+	text-align: center;
+}
+
+/* Tooltip de la información */
+.tooltip-i {
+	position: relative;
+	display: inline-block;
+}
+.tooltip-i .tooltiptext-i {
+	visibility: hidden;
+	width: 240px;
+	background-color: grey;
+	font-family: Arial;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px;
+	/* Posición del tooltip */
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	margin-left: -200px;
+}
+.tooltip-i:hover .tooltiptext-i {
+	visibility: visible;
+	opacity: 1;
+}

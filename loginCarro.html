@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,inicial-scale=1">
+<meta name="author" content="Alvaro Guiffrey">
+<meta name="description" content="Página para loguin del usuario. Se ingresan y
+verifican los datos del usuario para el loguin; también permite a través de un link acceder
+link acceder a la página de usuario nuevo o salir del sitio.">
+<meta name="curso" content="Desarrollo Web con Javascript - Trabajo Final Integrador">
+<meta name="fecha" content="20/02/2020">
+<title>Curso JS - Evaluación Integradora</title>
+<!-- Link de la aplicación -->
+<link href="css/style_curso.css" rel="stylesheet" type="text/css" />
+<!-- Script de la aplicación -->
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/loginCarro.js" type="text/javascript"></script>
+<!-- Librerias -->
+<script src="https://kit.fontawesome.com/d0d0eb778c.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="lib/jquery/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- Cabecera de la página -->
+	<header>
+		<h1 id="logo">
+			<img id="imgLogo"/><span id="titulo"></span>
+			<div class="tooltip-i" id='logoInfo'>
+	  		<i id="info"></i><span class="tooltiptext-i" id="textoInfo"></span>
+	  	</div>
+		</h1>
+	</header>
+
+<!-- Contenido de la página -->
+<section class="caja" id="contenido">
+	<article class="usuarioActivo">
+		<output name="usuarioActivo" id="usuarioActivo"></output>
+	</article>
+  <h3> Carro de compras - Login </h3>
+  <article class="mensaje" id="mensaje"></article>
+
+	<!-- Formulario para el loguin -->
+  <article class="login" id="login">
+    <form class="loginForm" name="loginForm" id="loginForm" action="carroCompra.html" method="post">
+      <h4>Formulario de Login</h4>
+      <div class="renglon">
+        <div class="col-30">
+          Usuario:
+        </div>
+        <div class="col-70">
+          <input type="text" name="usuario" id="usuario" value="">
+        </div>
+      </div>
+      <div class="renglon">
+        <div class="col-30">
+          Contraseña:
+        </div>
+        <div class="col-70">
+          <input type="password" name="contrasenia" id="contrasenia" value="">
+        </div>
+      </div>
+      <div class="acciones">
+        <button type="reset" class="botonGris" id="borrar" >Borrar</button>
+        <button type="submit" class="botonSuceso" id="loguear">Loguear</button>
+      </div>
+      <div class="acciones">
+        <a class="enlace" id="usuarioNuevo" href="#">Usuario Nuevo</a>
+      </div>
+    </form>
+  </article>
+
+	<!-- Botones para acciones -->
+	<div class="acciones">
+		<button type="button" class="botonGris" id="salir">Salir</button>
+	</div>
+</section>
+
+<!-- Pie de la página -->
+<footer>
+  <div id="pie">Alumno: <a id="mailAlumno"></a> @ Curso: 2019-2020</div>
+  <div id="botones_pie"><a id="inicioPie"><i id="iconoInicioPie"></i></a></div>
+</footer>
+</body>
+</html>
